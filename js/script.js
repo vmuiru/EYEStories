@@ -11,3 +11,11 @@ const BASE_URL = 'https://newsapi.org/v2/top-headlines?';
 
 
 // functions
+
+$.ajax(BASE_URL + API_KEY)
+    .then(function(data) {
+        newsData = data;
+        render();
+    }, function(error) {
+        console.log('Error: ', error);
+    });
