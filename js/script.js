@@ -1,6 +1,6 @@
 // Constants and Variables
-const API_KEY = '89194dedd2cd4815893a2c41dbd7adcb'; //CONFIG.newsAPIKey
-const BASE_URL = 'https://newsapi.org/v2/top-headlines?country=us&apikey=';
+ //CONFIG.newsAPIKey
+const BASE_URL = 'https://proxify-news-api.herokuapp.com/api';
 
 //cached element references
 const $title = $('#title');
@@ -9,41 +9,51 @@ const $image = $('#image');
 const $form = $('form');
 const $input = $('input[type="text"]');
 
-let userInput; 
+let userInput, publicationData;
 
 // event listeners 
-$form.on('submit', handleGetData);
+$form.on('submit', handleGetHeadlines);
 
 // functions
-function handleGetData(event) {
+function handleGetHeadlines(event) {
     event.preventDefault();
 
      userInput = $input.val();
 
-    $.ajax(BASE_URL +`q=${userInput}&` + `units=&appid=`+ API_KEY)
-    .then(function(data) {
-        console.log('DATA: ', data);
+    $.ajax(BASE_URL + '?category=' +userInput)
+    .then(function(headlines) {
+        publicationData = headlines.sources
+        render();
 
-        render(data);
+        render(headlines);
     }, function(error) {
         console.log('Error: ', error);
     });
 }
 
 
-function render(data) {
-    $title.text('Title: ' + data.title);
-    $author.text('Author: ' + data.author);
-    // $feelsLike.text('Feels Like: ' + data.main.feels_like);
-    // $currentWeather.text('Current Weather: ' + data.weather[0].description);
+function render() {
+    const html = publicationData.map(function(article) {
+        return`
+        <h2>${article.name}</h2>
+        <p>${article.description}</p>
+        <a href="${article.url}">Link to Article</a>
+        `
+    })
+   
+    $('main').html(html)
 };
 
-// $currentWeather.grep(data.weather[0].description, funcition('cloud')) {
-// render('<img src="/.img/yang-yang-HqprR1VEDjw-unsplash.jpg">'); 
-// };
 
 
-// if($currentWeather.text === 'scattered clouds') {
-//     render('<img src="/.img/yang-yang-HqprR1VEDjw-unsplash.jpg">');
-// }
 
+/*
+visit eye stories.com
+home page - top headlines images in us
+12 photos from
+  - hover to see article title and author
+  -click to read full story
+
+  search by author, source maybe date
+
+*/
