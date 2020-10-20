@@ -36,11 +36,12 @@ function render() {
     const html = publicationData.map(function(article) {
         return`
             <h2>${article.name}</h2>
-            <p>${article.description}</p>
-            <a href="${article.url}">Link to Article</a>
+            <p>${article.description} <a href="</p>
         `
     })
-    // var result = str.link(article.url);
+    //${article.url}">Link to Article</a>
+
+    //var result = str.link(article.url);
     // document.querySelector(article.description) {
     //     string.link(`<a href="${article.url}">Link to Article</a>`)};
     $('p').append(html);

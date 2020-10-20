@@ -59,25 +59,16 @@ h2.hover {
     text-shadow: lightgrey;
 }
 
-
-p3 {
-    font-family: 'Tajawal', sans-serif;
-}
-
 p {
     display: grid;
-    grid-template-columns: 60%;
     justify-content: right;
-
-}
-p2 {
-    margin-top: 0%;
-}
-p3 {
     font-family: 'Tajawal', sans-serif;
+
 }
 
 img {
+    margin-top: 0%;
+    justify-content: left;
     width: 40%;
     height: auto; 
     align-items: left;
