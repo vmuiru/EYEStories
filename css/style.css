@@ -12,7 +12,10 @@ header {
     color: lightyellow;
     background-color: gold;
     text-shadow: 1px 1px 1px 5px lightgray;
+    box-shadow: linen;
     text-indent: 10px;
+    position: relative;
+    width:100%;
 }
 
 
@@ -48,23 +51,44 @@ input[type="submit"] {
 
 }
 
-main {
-    display: grid;
-    grid-template-columns: 800px;
-    justify-content: right;
-
-}
-
 h2 {
     font-family: 'Tajawal', sans-serif;
-    color: lightskyblue;
+    color: darkolivegreen;
 }
 h2.hover {
     text-shadow: lightgrey;
 }
 
 
-p {
+p3 {
     font-family: 'Tajawal', sans-serif;
+}
+
+p {
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: right;
+
+}
+p2 {
+    margin-top: 0%;
+}
+p3 {
+    font-family: 'Tajawal', sans-serif;
+}
+
+img {
+    width: 40%;
+    height: auto; 
+    align-items: left;
+
+    
+  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    margin-left: 900px;
 }
 

@@ -43,7 +43,7 @@ function render() {
     // var result = str.link(article.url);
     // document.querySelector(article.description) {
     //     string.link(`<a href="${article.url}">Link to Article</a>`)};
-    $('main').append(html);
+    $('p').append(html);
     
     
 };
