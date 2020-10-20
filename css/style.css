@@ -2,3 +2,69 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+    background-color: lightyellow;
+    
+}
+
+header {
+    color: lightyellow;
+    background-color: gold;
+    text-shadow: 1px 1px 1px 5px lightgray;
+    text-indent: 10px;
+}
+
+
+h1 {
+    display: grid;
+    font-family: 'Niconne', cursive;
+    font-size: 100px;
+}
+
+form {
+    margin-left: 800px;
+    margin-top: 0%;
+    background-color: lightyellow;
+
+}
+
+input[type="text"] {
+    font-family: 'Niconne', cursive;
+    font-size: 40px;
+    width: 350px;
+    height: 45px;
+    margin-left: 3px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 1px 5px linen;
+    background-color: lightyellow;
+    
+}
+
+input[type="submit"] {
+    font-family: 'Tajawal', sans-serif;
+    background-color: linen;
+    
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: right;
+
+}
+
+h2 {
+    font-family: 'Tajawal', sans-serif;
+    color: lightskyblue;
+}
+h2.hover {
+    text-shadow: lightgrey;
+}
+
+
+p {
+    font-family: 'Tajawal', sans-serif;
+}
+

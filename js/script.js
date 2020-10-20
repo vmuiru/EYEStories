@@ -1,5 +1,4 @@
 // Constants and Variables
- //CONFIG.newsAPIKey
 const BASE_URL = 'https://proxify-news-api.herokuapp.com/api';
 
 //cached element references
@@ -22,7 +21,7 @@ function handleGetHeadlines(event) {
 
     $.ajax(BASE_URL + '?category=' +userInput)
     .then(function(headlines) {
-        publicationData = headlines.sources
+        publicationData = headlines.sources;
         render();
 
         render(headlines);
@@ -32,18 +31,33 @@ function handleGetHeadlines(event) {
 }
 
 
+
 function render() {
     const html = publicationData.map(function(article) {
         return`
-        <h2>${article.name}</h2>
-        <p>${article.description}</p>
-        <a href="${article.url}">Link to Article</a>
+            <h2>${article.name}</h2>
+            <p>${article.description}</p>
+            <a href="${article.url}">Link to Article</a>
         `
     })
-   
-    $('main').html(html)
+    // var result = str.link(article.url);
+    // document.querySelector(article.description) {
+    //     string.link(`<a href="${article.url}">Link to Article</a>`)};
+    $('main').append(html);
+    
+    
 };
+// document.createEvent('MouseEvent');
 
+
+
+
+// function render(fullStory) {
+//     $publicationData.article.url({
+//         src: publicationData.article.url,
+//         alt: publicationData.article.name
+//     });
+// }
 
 
 
