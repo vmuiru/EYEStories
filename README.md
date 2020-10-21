@@ -1,7 +1,7 @@
 # zenNews
 A simple news app for the informed minimalist.
 
-Client x contracted out Victoria's services as he was worn down by all the bad news he consumed daily. They was looking to stay informed of current affairs, however, did not want to be subjected to information overload. The main request was to give the client the ability to chose what topics they'd like to read about.
+Client x contracted out Victoria's services as they noticed a need for a 'quiet'  news app. Worn down by all the bad news themselveves, they identified a niche in the industry and a target market. Their target consumer is looking to stay informed of current affairs, however, does not want to be subjected to information overload. The main request was to give the client the ability to chose what topics they'd like to read.
 
 ## Version 0.1
 
@@ -33,7 +33,7 @@ Be sure to limit search within the following topics
 
 
 ## Next Steps: planned future enhancements
-Include current weather
-Store a users preferences
-profiles for users
-Styling 
+-Include current weather
+-Store a users preferences
+-profiles for users
+-Styling 
