@@ -85,6 +85,7 @@ img {
   }
 
 footer {
+    color: lightyellow;
     background-color: lightslategray;
     position: fixed;
     width: 100vw;
