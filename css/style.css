@@ -47,8 +47,6 @@ input[type="text"] {
 input[type="submit"] {
     font-family: 'Tajawal', sans-serif;
     background-color: linen;
-    
-
 }
 
 h2 {
@@ -64,24 +62,25 @@ h2.hover {
     margin-top: 5%;
     margin-right: 5%;
     margin-left: auto;
-    text-align: center;
+    text-align: left;
     width: 50%;
     font-family: 'Tajawal', sans-serif;
+    padding: bottom
 
 }
 
 img {
+    transition-timing-function: ease-in;
     margin-top: -20%;
     margin-bottom: 10%;
     justify-content: left;
+    justify-content: space-between;
     width: 40%;
     height: 100vh; 
     align-items: left;
     position: fixed;
     z-index: -1;
     background-size: cover;
-
-    
   }
 
 footer {

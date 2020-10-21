@@ -11,10 +11,18 @@ Client x contracted out Victoria's services as he was worn down by all the bad n
 -CSS3
 -JavaScript
 -jQuery v3.5
+-Netlify
+-NewsApi
+-Heroku
+
 
 
 ## Getting Started - important instructions
-A simple straightforward interface with the main funtionality deatures first. Be sure to limit search withing the following topics 
+A simple straightforward interface with the main funtionality deatures first. 
+
+https://zennews.netlify.app
+
+Be sure to limit search within the following topics 
     -business 
     -entertainment 
     - general 
