@@ -36,7 +36,7 @@ function render() {
     const html = publicationData.map(function(article) {
         return`
             <h2>${article.name}</h2>
-            <p>${article.description} <a href="</p>
+            <p>${article.description}</p>
         `
     })
     //${article.url}">Link to Article</a>
@@ -44,10 +44,16 @@ function render() {
     //var result = str.link(article.url);
     // document.querySelector(article.description) {
     //     string.link(`<a href="${article.url}">Link to Article</a>`)};
-    $('p').append(html);
+    $('#articles-container').append(html);
     
     
 };
+
+
+// Document.querySelector('p') {
+
+
+// }
 // document.createEvent('MouseEvent');
 
 
